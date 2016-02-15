@@ -1,0 +1,91 @@
+
+.social-container{
+	padding: 0 0 15px 25px;
+}
+.mail {
+ margin-bottom: 62px;
+ animation: opa 8s;
+}
+.mail__slogan {
+  font-family: $mail-font-family;
+  font-size: $mail-font-size;
+  line-height: $mail-line-height;
+  letter-spacing: $mail-letter-spacing;
+  color: $font-color;
+
+}
+.mail__link{
+  @extend .mail__slogan;
+  color: $golden;
+}
+
+.social-block__item{
+	display: inline-block;
+
+	&:not(:last-child) {
+		margin-right: 10%;
+	}
+
+}
+
+.social-block__link{
+  font-size: $footer-font-size;
+  line-height: $footer-line-height;
+  color: $font-color;
+
+  letter-spacing: $footer-letter-spacing;
+
+  transition: 0.4s;
+
+  &:hover {
+  	color: $gray-dark;
+  }
+}
+
+@media (min-width: 768px) {
+  .social-container{
+   padding:0;
+    padding: 0 5% 35px 28.3%;
+    margin-top: 72px;
+}
+
+.mail {
+    margin-bottom: 97px;  
+  }
+  .mail__slogan {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+  }
+
+.social-block__link{
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.3px;
+
+  color: $gray-dark;
+  &:hover {
+    color: $golden;
+  }
+}
+}
+
+@media (min-width: 1024px) {
+  .social-container {
+    padding-bottom: 51px;
+  }
+  .mail {
+    margin-bottom: 123px;
+  }
+   .mail__slogan {
+      font-size: 58px;
+      line-height: 72px;
+      letter-spacing: 0.9px;
+  }
+ .social-block__link {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+ }
+}
+

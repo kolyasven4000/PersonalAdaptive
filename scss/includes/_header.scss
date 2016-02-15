@@ -1,0 +1,27 @@
+.main-header{
+	padding-top: 22px;
+	margin-bottom: 67px;
+	animation: opa 2s linear;
+}
+.main-header__logo{
+	width: 115px;
+	height: 27px;
+}
+
+@media(min-width: 768px) {
+	.main-header{
+	padding-top: 31px;
+	margin-bottom: 161px;
+	}
+	.main-header__logo{ 
+	width: 152px;
+	height: 49px;
+}
+}
+
+@media(min-width: 1024px) {
+.main-header{
+	padding-top: 51px;
+	margin-bottom: 285px;
+	}
+	}

@@ -1,0 +1,15 @@
+@mixin line($height, $width, $top) {
+	content: '';
+	display: block;
+	position: absolute;
+
+	width: $width;
+	height: $height;
+
+	top: $top;
+	left:0;
+	background-color: $golden;
+	@media(min-width: 1024px) {
+	width: 61px;
+}
+}

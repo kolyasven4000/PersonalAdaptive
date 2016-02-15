@@ -1,0 +1,41 @@
+.description{
+	margin-bottom: 68px;
+	animation: opa 8s;
+	
+}
+
+.description__text {
+	max-width: 600px;
+	p{	
+	line-height: $description-line-height;
+	letter-spacing: $description-letter-space;
+	}
+}
+
+@media(min-width: 768px)  {
+	.description {
+		margin-bottom: 100px;
+	}
+	.description__text{
+		float: right;
+		width: 71%;
+		max-width: 71%;
+		
+		p{
+			font-size: 22px;
+			line-height: 30px;
+			letter-spacing: 0.3px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.description {
+		margin-bottom: 128px;
+	}
+	.description__text p {
+		font-size: 36px;
+		line-height: 48px;
+		letter-spacing: 0.5px;
+	}
+}
